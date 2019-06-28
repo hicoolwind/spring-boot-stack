@@ -1,4 +1,11 @@
 # spring boot 技术栈
 
+## Module
+
+* web
 * mybatis
-* unit test
+
+# Doc
+
+* Run Main study.Application
+* Look http://localhost:8081
