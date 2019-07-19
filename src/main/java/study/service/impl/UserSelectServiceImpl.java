@@ -2,23 +2,23 @@ package study.service.impl;
 
 import org.springframework.stereotype.Service;
 import study.mapper.UserMapper;
-import study.service.UserService;
+import study.service.UserSelectService;
 
 import javax.annotation.Resource;
 
 /**
  * @author liujunliang
- * @date 2019/6/28
+ * @date 2019/7/19
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class UserSelectServiceImpl implements UserSelectService {
 
     @Resource
     private UserMapper userMapper;
 
     @Override
-    public Integer getUserCount() {
-        int a = 1 / 0;
-        return userMapper.getCount();
+    public String getUserNameById(Long id) {
+        return userMapper.getUserNameById(id);
     }
+
 }

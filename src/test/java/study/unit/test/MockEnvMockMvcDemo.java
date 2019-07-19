@@ -13,13 +13,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
+ * 模拟环境
  * @author liujunliang
  * @date 2019/7/1
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class TestDemo {
+public class MockEnvMockMvcDemo {
 
     @Autowired
     private MockMvc mvc;

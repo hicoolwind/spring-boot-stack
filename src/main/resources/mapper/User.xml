@@ -4,4 +4,8 @@
     <select id="getCount" resultType="int">
         select count(*) from user where deleted = 0;
     </select>
+
+    <select id="getUserNameById" parameterType="long" resultType="String">
+        select user_name from user where id = #{id};
+    </select>
 </mapper>

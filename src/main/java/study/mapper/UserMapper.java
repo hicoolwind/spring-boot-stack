@@ -7,4 +7,6 @@ package study.mapper;
 public interface UserMapper {
 
     Integer getCount();
+
+    String getUserNameById(Long id);
 }
