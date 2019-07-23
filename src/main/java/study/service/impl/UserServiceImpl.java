@@ -1,6 +1,7 @@
 package study.service.impl;
 
 import org.springframework.stereotype.Service;
+import study.form.UserAddForm;
 import study.mapper.UserMapper;
 import study.service.UserService;
 
@@ -18,7 +19,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Integer getUserCount() {
-        int a = 1 / 0;
         return userMapper.getCount();
+    }
+
+    @Override
+    public Integer add(UserAddForm form) {
+
+        return userMapper.add(form);
     }
 }

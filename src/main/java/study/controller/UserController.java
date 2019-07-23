@@ -1,5 +1,7 @@
 package study.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
+import study.form.UserAddForm;
 import study.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,5 +22,10 @@ public class UserController {
     @GetMapping("count")
     public Integer getUserCount(){
         return userService.getUserCount();
+    }
+
+    @PostMapping("add")
+    public Integer addUser(UserAddForm form){
+        return userService.add(form);
     }
 }
