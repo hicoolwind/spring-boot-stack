@@ -8,4 +8,10 @@
     <select id="getUserNameById" parameterType="long" resultType="String">
         select user_name from user where id = #{id};
     </select>
+
+    <insert id="add" parameterType="study.entity.UserEntity">
+        INSERT INTO user (user_name, password, mobile, email, nick_name, deleted, updated_at, created_at)
+        VALUES
+        (#{userName}, #{password}, #{mobile}, #{email}, #{nickName}, #{deleted}, #{updatedAt}, #{createdAt});
+    </insert>
 </mapper>

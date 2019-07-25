@@ -1,6 +1,7 @@
 package study.service.impl;
 
 import org.springframework.stereotype.Service;
+import study.entity.UserEntity;
 import study.form.UserAddForm;
 import study.mapper.UserMapper;
 import study.service.UserService;
@@ -24,7 +25,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Integer add(UserAddForm form) {
-
-        return userMapper.add(form);
+        UserEntity userEntity = new UserEntity();
+        userEntity.setUserName(form.getUserName());
+        userEntity.setPassword(form.getPassword());
+        userEntity.setMobile(form.getMobile());
+        userEntity.setEmail(form.getEmail());
+        userEntity.setNickName(form.getNickName());
+        return userMapper.add(userEntity);
     }
 }

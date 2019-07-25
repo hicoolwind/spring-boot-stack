@@ -1,4 +1,4 @@
-package study.config;
+package study.config.mybatis;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;

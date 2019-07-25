@@ -1,6 +1,6 @@
 package study.mapper;
 
-import study.form.UserAddForm;
+import study.entity.UserEntity;
 
 /**
  * @author liujunliang
@@ -12,5 +12,5 @@ public interface UserMapper {
 
     String getUserNameById(Long id);
 
-    Integer add(UserAddForm form);
+    Integer add(UserEntity userEntity);
 }
