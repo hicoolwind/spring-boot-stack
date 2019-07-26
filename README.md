@@ -1,10 +1,11 @@
 # spring boot 技术栈集成学习
 
-## doing
+## done
 
 * web start
 * mybatis start
-* unit test start
+* unit test demo
+* yml config
 
 ## todo
 
