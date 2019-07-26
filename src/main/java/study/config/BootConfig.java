@@ -9,6 +9,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
+ *
+ * Bean 配置
+ * mvc  配置
  * @author liujunliang
  * @date 2019/7/26
  */
