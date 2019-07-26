@@ -1,4 +1,4 @@
-package study.unit.test;
+package study.unit.test.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
