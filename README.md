@@ -12,10 +12,10 @@ mybatis deep-going
 
 ## install
 
-* Config spring-boot-stack/src/main/resources/application.yml
-* Db spring-boot-stack/db
-* Run Main study.Application
-* Look http://localhost:8088
+* 配置 spring-boot-stack/src/main/resources/application.yml
+* 库表 spring-boot-stack/db
+* 运行 Main study.Application
+* 查看 http://localhost:8088
 
 ## 项目规范
 
@@ -43,10 +43,15 @@ study.model -- Model
 ```
 study.config
     项目配置及集成框架配置
+
 study.mapper
     Mybatis DAO 操作
+
 study.service
     业务方法
+
+study.properties
+    配置文件
 ```
 
 ## Java规范
